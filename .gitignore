@@ -1,3 +1,5 @@
-^\.hg
-\.pyc$
-\.cfg$
+.hg/*
+.hgignore
+*.pyc
+*.cfg
+requests/*
