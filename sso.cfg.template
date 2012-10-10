@@ -1,0 +1,6 @@
+[options]
+url: http://stag.claroWindows
+app_id: 1235
+auth_key: 12334
+email: ryan@dominknow.com
+role: reviewer
