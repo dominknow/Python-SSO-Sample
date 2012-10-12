@@ -20,7 +20,7 @@ class SSOApp:
 		"Makes a request for a user, represented by the 'user' dictionary"
 		userJSON = json.dumps(user)
 		loginHash = hashlib.sha1(userJSON + self.auth_key).hexdigest()
-		response = requests.post(self.tokenURL, params={'userJSON' : userJSON, 'loginHash' : loginHash})
+		response = requests.post(self.tokenURL, data={'userJSON' : userJSON, 'loginHash' : loginHash})
 		self.lastStatus = int(response.status_code)
 		self.headers = response.headers
 		if self.headers["Location"] != None:
